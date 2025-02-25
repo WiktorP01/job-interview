@@ -6,12 +6,13 @@ import java.time.LocalDate;
 
 @Data
 @Builder
+@AllArgsConstructor
 public class HotelBookingDto {
 
     private long id;
     private String guestFirstName;
     private String guestLastName;
-    private LocalDate start;
-    private LocalDate end;
+    private LocalDate checkIN;
+    private LocalDate checkOut;
 
 }

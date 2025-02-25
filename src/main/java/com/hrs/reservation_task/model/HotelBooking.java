@@ -22,8 +22,8 @@ public class HotelBooking {
     @Column(name = "guest_last_name")
     private String guestLastName;
 
-    private LocalDate start;
-    private LocalDate end;
+    private LocalDate checkIn;
+    private LocalDate checkOut;
 
     private boolean deleted = false;
 

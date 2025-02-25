@@ -9,8 +9,8 @@ public class HotelBookingMapper {
         return HotelBooking.builder()
                 .guestFirstName(hotelBookingDto.getGuestFirstName())
                 .guestLastName(hotelBookingDto.getGuestLastName())
-                .start(hotelBookingDto.getStart())
-                .end(hotelBookingDto.getEnd())
+                .checkIn(hotelBookingDto.getCheckIN())
+                .checkOut(hotelBookingDto.getCheckOut())
                 .build();
     }
 
@@ -19,8 +19,8 @@ public class HotelBookingMapper {
                 .id(hotelBooking.getId())
                 .guestFirstName(hotelBooking.getGuestFirstName())
                 .guestLastName(hotelBooking.getGuestLastName())
-                .start(hotelBooking.getStart())
-                .end(hotelBooking.getEnd())
+                .checkIN(hotelBooking.getCheckIn())
+                .checkOut(hotelBooking.getCheckOut())
                 .build();
     }
 

@@ -11,7 +11,7 @@ import java.util.Optional;
 public interface HotelBookingJpaRepository extends JpaRepository<HotelBooking, Long> {
 
     @Override
-    @Query(" SELECT hb FROM HotelBooing hb WHERE hb.deleted = false ")
+    @Query(" SELECT hb FROM HotelBooking hb WHERE hb.deleted = false ")
     List<HotelBooking> findAll();
 
     @Override

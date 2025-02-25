@@ -29,8 +29,8 @@ public class HotelBookingServiceImpl implements HotelBookingService {
                 .orElseThrow(HotelBookingNotFoundException::new);
         existingHotelBooking.setGuestFirstName(hotelBookingDto.getGuestFirstName());
         existingHotelBooking.setGuestLastName(hotelBookingDto.getGuestLastName());
-        existingHotelBooking.setStart(hotelBookingDto.getStart());
-        existingHotelBooking.setEnd(hotelBookingDto.getEnd());
+        existingHotelBooking.setCheckIn(hotelBookingDto.getCheckIN());
+        existingHotelBooking.setCheckOut(hotelBookingDto.getCheckOut());
         return HotelBookingMapper.mapToDto(hotelBookingJpaRepository.save(existingHotelBooking));
     }
 
