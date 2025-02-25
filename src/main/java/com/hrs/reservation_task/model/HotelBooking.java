@@ -6,12 +6,10 @@ import lombok.*;
 import java.time.LocalDate;
 
 @Entity
+@Data
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
 public class HotelBooking {
 
     @Id

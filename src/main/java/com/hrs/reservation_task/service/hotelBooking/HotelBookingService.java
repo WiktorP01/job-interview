@@ -1,4 +1,4 @@
-package com.hrs.reservation_task.service;
+package com.hrs.reservation_task.service.hotelBooking;
 
 import com.hrs.reservation_task.dto.HotelBookingDto;
 
@@ -6,7 +6,9 @@ import java.util.List;
 
 public interface HotelBookingService {
 
-    void save(HotelBookingDto hotelBookingDto);
+    HotelBookingDto save(HotelBookingDto hotelBookingDto);
+
+    HotelBookingDto update(long id, HotelBookingDto hotelBookingDto);
 
     HotelBookingDto getBooking(long id);
 
